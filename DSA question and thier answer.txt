@@ -1,0 +1,107 @@
+//
+Question 1st:- print Z.
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // Write your code here
+        System.out.println("*****");
+        System.out.println("   * ");
+        System.out.println("  *  ");
+        System.out.println(" *   ");
+        System.out.println("*****");
+
+    }
+}
+
+Question 2nd:- Grading system
+
+import java.util.*;
+  
+  public class Main{
+  
+  public static void main(String[] args) {
+      // input - don''t change this code
+      Scanner scn = new Scanner(System.in);
+      int marks = scn.nextInt();
+      // input - don''t change this code
+      
+      // code here  
+      if(marks>90){
+          System.out.println("excellent");
+      }else if(marks <=90 && marks >80){
+          System.out.println("good");
+      }else if(marks <=80 && marks >70){
+          System.out.println("fair");
+      }else if( marks <=70 && marks>60){
+          System.out.println("meets expectations");
+      }else{
+          System.out.println("below par");
+      }
+      
+  
+   }
+  }
+
+
+  Question 3:- Is a number prime
+
+  import java.util.*;
+  
+  public class Main{
+  
+  public static void main(String[] args) {
+      Scanner scn = new Scanner(System.in);
+  
+       // write ur code here
+       int t = scn.nextInt();
+       for(int i = 1; i<=t;i++){
+       int n = scn.nextInt();
+       int count = 2;
+    //    int div;
+       for(int div = 2; div*div<=n;div++){
+           if(n%div == 0){
+               count++;
+           }
+
+       }
+       if(count ==2){
+           System.out.println("prime");
+       }else{
+           System.out.println("not prime");
+       }
+
+       }
+       
+  
+   }
+  }
+
+
+  Question 4:- Print all prime till n
+
+  import java.util.*;
+
+public class Main{
+    public static void main(String[] args) {
+        // write your code here
+        Scanner scn = new Scanner(System.in);
+        int n1 = scn.nextInt();
+        int n2 = scn.nextInt();
+        
+        for(int t = n1; t<=n2;t++){
+            int count = 2;
+            for( int div = 2; div*div<=t;div++){
+                if(t%div ==0){
+                    count++;
+                    
+                }
+            }
+            if(count ==2){
+                System.out.println(t);
+            }
+        }
+    }
+}
