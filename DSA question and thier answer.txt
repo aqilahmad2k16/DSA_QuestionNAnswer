@@ -151,3 +151,34 @@ import java.util.*;
    }
   }
 
+ Question 7:-Digits of a number
+
+ import java.util.*;
+    
+    public class Main{
+    
+    public static void main(String[] args) {
+      // write your code here
+      Scanner scn = new Scanner(System.in);
+      int n = scn.nextInt();
+      int d = 0;
+      int a = n;
+      while(n!=0){
+          n = n/10;
+          d++;
+          
+      }   
+      
+      int m = (int) Math.pow(10,(d-1));
+    //   System.out.println(multi);
+      while(m!=0){
+          
+        int pk = a/m;
+            
+        System.out.println(pk);
+        a = a%m;
+
+        m = m/10;
+      }
+     }
+    }
