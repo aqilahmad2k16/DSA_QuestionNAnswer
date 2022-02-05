@@ -182,3 +182,17 @@ import java.util.*;
       }
      }
     }
+
+    Question 8:- Reverse of a number.
+
+    answer:-
+        Scanner scn = new Scanner(System.in);
+     int n = scn.nextInt();
+
+     while(n != 0){
+         int rem = n%10;
+         n = n/10;
+         System.out.println(rem);
+     }
+    }
+   }
